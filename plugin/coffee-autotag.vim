@@ -4,13 +4,6 @@ endif
 
 let g:loaded_coffee_autotag=1
 
-if !has("ruby")
-  echohl WarningMsg
-  echo "Coffee auto tag requires Vim to be compiled with Ruby support"
-  echohl none
-  finish
-endif
-
 let s:CoffeeAutoTagFile="./tags"
 let s:CoffeeAutoTagIncludeVars=0
 let s:CoffeeAutoTagTagRelative=1
